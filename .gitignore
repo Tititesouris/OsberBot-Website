@@ -1,0 +1,9 @@
+config
+tests
+vendor
+.env
+.env.example
+_ide_helper.php
+artisan
+composer.json
+composer.lock
