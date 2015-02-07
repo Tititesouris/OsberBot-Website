@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="/css/fontfaces.css" />
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/colors.css" />
-		<meta name="viewport" content="initial-scale=1" />
+		<meta name="viewport" content="initial-scale=0.8" />
 	</head>
 	<body>
 		@include('templates.navbar')
