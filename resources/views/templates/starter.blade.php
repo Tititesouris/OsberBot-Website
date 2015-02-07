@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>OsberBot</title>
 		<link rel="stylesheet" href="/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="/css/fontfaces.css" />
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/colors.css" />

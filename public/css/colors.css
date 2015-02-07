@@ -2,18 +2,27 @@ body {
 	background-color: #f2f2f2;
 }
 
-nav {
-	background-color: #43a047;
-}
-/* Dropdown elements */
-.dropdown-content li a {
-	color: #fff;
-	background-color: #43a047;
+nav .navbar-brand {
+	color: #ffffff;
 }
 
-.dropdown-content li a:hover {
-	color: #fff;
+/* Navbar, dropdown toggle and dropdown menu */
+nav, nav ul, nav .dropdown-menu {
+	background-color: #43a047;
+	color: #f2f2f2;
+}
+
+nav a, nav a:visited {
+	color: #f2f2f2;
+}
+
+nav .active, nav li:hover a:hover, nav .dropdown-menu a:hover {
 	background-color: #3c8f3f;
+	color: #ffffff;
+}
+
+nav .fa {
+	color: #ffffff;
 }
 
 article h1, article h1 .title {

@@ -1,16 +1,14 @@
-<nav class="navbar navbar-default">
+<nav class="navbar">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar">
 				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<i class="fa fa-bars"></i>
 			</button>
 			<a class="navbar-brand" href="/">OsberBot</a>
 		</div>
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="top-navbar">
 			<ul class="nav navbar-nav">
 				<li{{ (Request::is('/') ? ' class="active"' : '') }}>
 					<a href="/">

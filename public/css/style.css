@@ -2,40 +2,35 @@ html {
 	font-size: 1em;
 }
 
-/* Icons */
-i.fa {
+a, a:hover, a:visited, a:focus {
+	text-decoration: none;
+}
+
+a .fa {
 	padding-right: 0.5rem;
 }
 
-nav {
-	/* Fixes the navbar's shadow not being on top of the content */
-	position: relative;
-}
-
-nav .brand-logo {
-	position: relative;
-	font-size: 3rem;
-	font-family: Montserrat, sans-serif;
-	/* Space between logo and navbar elements */
-	padding: 0 3rem 0 0;
-	/* Space between logo and left side */
-	margin: 0 0 0 1rem;
-}
-
-/* Elements of the navbar */
-nav ul li a {
+nav, .navbar {
+	border-radius: 0;
 	font-size: 1.25rem;
 }
 
-/* Fixes the elements' shadow looking weird on hover */
-nav .nav-wrapper {
-	box-shadow: none;
+nav .collapse {
+	/* Removes padding on the sides of the navbar */
+	padding: 0;
 }
 
-/* Makes dropdown elements appear under the navbar */
-.dropdown-content {
-	margin-top: 4rem;
-	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.156863), 1px 1px 1px rgba(0, 0, 0, 0.156863), 0 3px 3px rgba(0, 0, 0, 0.117647);
+nav .navbar-brand {
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	margin-right: 3rem;
+}
+
+nav .dropdown-menu {
+	border-radius: 0;
+	border: none;
+	font-size: 1.25rem;
+	box-shadow: none;
 }
 
 #main {
