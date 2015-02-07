@@ -16,7 +16,7 @@ nav a, nav a:visited {
 	color: #f2f2f2;
 }
 
-nav .active, nav li:hover a:hover, nav .dropdown-menu a:hover {
+nav .active, nav li a:hover, nav .dropdown-menu li:hover a {
 	background-color: #3c8f3f;
 	color: #ffffff;
 }

@@ -16,6 +16,10 @@ nav, .navbar {
 	box-shadow: 0 2px 2px #aaaaaa;
 }
 
+nav ul li a {
+	transition: ease-out 0.3s;
+}
+
 nav .collapse {
 	/* Removes padding on the sides of the navbar */
 	padding: 0;
@@ -37,6 +41,21 @@ nav .dropdown-menu {
 
 nav .dropdown-menu a {
 	padding: 0.5rem 0 0.5rem 2rem;
+}
+
+.collapse.in .navbar-nav {
+	overflow: hidden;
+	box-shadow: none;
+	margin: 0;
+}
+
+.collapse.in a {
+	padding-left: 1.86rem;
+	margin: 0;
+}
+
+.collapse.in .dropdown-menu li {
+	padding: 0 2rem 0 2rem;
 }
 
 #main {
