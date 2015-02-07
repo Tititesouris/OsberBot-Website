@@ -13,6 +13,7 @@ a .fa {
 nav, .navbar {
 	border-radius: 0;
 	font-size: 1.25rem;
+	box-shadow: 0 2px 2px #aaaaaa;
 }
 
 nav .collapse {
@@ -30,27 +31,26 @@ nav .dropdown-menu {
 	border-radius: 0;
 	border: none;
 	font-size: 1.25rem;
-	box-shadow: none;
+	box-shadow: -1px 2px 2px rgba(50, 50, 50, 0.25), 1px 2px 2px rgba(50, 50, 50, 0.25);
+	padding: 0;
+}
+
+nav .dropdown-menu a {
+	padding: 0.5rem 0 0.5rem 2rem;
 }
 
 #main {
 	background-color: #fff;
 	width: 85%;
-	margin: -2.1rem auto 1rem auto;
+	margin: -1.2rem auto 1rem auto;
 	padding: 2rem;
 	box-shadow: 0 2px 2px #aaaaaa;
 }
 
 article h1 {
-	margin: 3rem 0 4rem 0;
-	padding: 0.75rem 1rem 0 2rem;
-	line-height: 70%;
+	margin-top: 0;
+	padding: 0.2rem 0 0 0.75rem;
 	box-shadow: 0 2px 2px #aaaaaa;
-}
-
-article h1 .title {
-	padding: 0 3rem 0 2rem;
-	box-shadow: 0 1px 5px #66bb6a;
 }
 
 section {

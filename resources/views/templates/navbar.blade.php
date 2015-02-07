@@ -10,29 +10,29 @@
 
 		<div class="collapse navbar-collapse" id="top-navbar">
 			<ul class="nav navbar-nav">
-				<li{{ (Request::is('/') ? ' class="active"' : '') }}>
+				<li{{ (Request::is('/') ? ' class=active' : '') }}>
 					<a href="/">
 						<i class="fa fa-home"></i>Home
 					</a>
 				</li>
-				<li{{ (Request::is('/dashboard') ? ' class="active"' : '') }}>
+				<li{{ (Request::is('dashboard') ? ' class=active' : '') }}>
 					<a href="/dashboard">
 						<i class="fa fa-th-large"></i>Dashboard
 					</a>
 				</li>
-				<li{{ (Request::is('/doc') ? ' class="active"' : '') }}>
+				<li{{ (Request::is('doc') ? ' class=active' : '') }}>
 					<a href="/doc">
 						<i class="fa fa-book"></i>Documentation
 					</a>
 				</li>
-				<li{{ (Request::is('/stats') ? ' class="active"' : '') }}>
+				<li{{ (Request::is('stats') ? ' class=active' : '') }}>
 					<a href="/stats">
 						<i class="fa fa-bar-chart"></i>Statistics
 					</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
+				<li class="dropdown{{ (Request::is('profile') ? ' active' : '') }}">
 					<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 						<i class="fa fa-user"></i>Tititesouris<span class="caret"></span>
 					</a>
@@ -49,7 +49,7 @@
 						</li>
 					</ul>
 				</li>
-				<li{{ (Request::is('/settings') ? ' class="active"' : '') }}>
+				<li{{ (Request::is('settings') ? ' class=active' : '') }}>
 					<a href="/settings">
 						<i class="fa fa-cog"></i>Settings
 					</a>
