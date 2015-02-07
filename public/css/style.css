@@ -1,5 +1,6 @@
 html {
 	font-size: 1em;
+	transition: ease-in 0.2s;
 }
 
 a, a:hover, a:visited, a:focus {
@@ -43,6 +44,11 @@ nav .dropdown-menu a {
 	padding: 0.5rem 0 0.5rem 2rem;
 }
 
+.navbar-toggle {
+	font-size: 3rem;
+	padding: 0;
+}
+
 .collapse.in .navbar-nav {
 	overflow: hidden;
 	box-shadow: none;
@@ -72,17 +78,18 @@ article h1 {
 	box-shadow: 0 2px 2px #aaaaaa;
 }
 
-section {
-
-}
-
 footer {
 	text-align: center;
 	line-height: 2.5rem;
 }
 
+footer .fa {
+	padding-right: 0.25rem;
+}
+
 footer a {
 	padding: 0 0.5rem 0 0.5rem;
+	display: inline-block;
 	transition: ease-out 0.25s;
 }
 
@@ -90,4 +97,10 @@ footer img {
 	width: 1.5rem;
 	display: inline;
 	margin-right: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 0.8em;
+	}
 }
