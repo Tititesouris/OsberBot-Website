@@ -1,0 +1,62 @@
+html {
+	font-size: 1em;
+}
+
+a, a:hover, a:visited, a:focus {
+	text-decoration: none;
+}
+
+a .fa {
+	padding-right: 0.5rem;
+}
+
+#main {
+	background-color: #fff;
+	width: 85%;
+	margin: -1.5rem auto 1rem auto;
+	padding:  0 2rem 2rem 2rem;
+	box-shadow: 0 2px 2px #aaaaaa;
+}
+
+section {
+	padding: 2.5rem 2rem 2rem 2rem;
+	margin-bottom: 2.5rem;
+	font-size: 1.25rem;
+}
+
+section:last-child {
+	margin-bottom: 0;
+}
+
+section h1 {
+	margin: 0 0 1.5rem 0;
+	padding: 0.2rem 0 0 0.75rem;
+	box-shadow: 0 2px 2px #aaaaaa;
+}
+
+section .content {
+	padding-left: 2rem;
+	font-family: Roboto, sans-serif;
+	text-align: justify;
+}
+
+section .content br {
+	line-height: 2.5rem;
+}
+
+section ul {
+	padding: 0;
+}
+
+section li {
+	margin-bottom: 1rem;
+	list-style: square inside;
+}
+
+section li .element {
+	font-weight: bold;
+}
+
+section li .element::after {
+	content: ": ";
+}

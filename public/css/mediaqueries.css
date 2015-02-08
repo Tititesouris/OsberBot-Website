@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+	html {
+		font-size: 0.8em;
+	}
+	
+	#main {
+		width: 95%;
+		padding: 0 1rem 1rem 1rem;
+	}
+
+	section {
+		padding: 1.5rem 1rem 1rem 1rem;
+		margin-bottom: 1.25rem;
+	}
+
+	section h1 {
+		margin-bottom: 0.5rem;
+	}
+
+	section .content {
+		padding: 1rem;
+	}
+}

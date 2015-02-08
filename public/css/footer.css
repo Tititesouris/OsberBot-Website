@@ -1,0 +1,20 @@
+footer {
+	text-align: center;
+	line-height: 2.5rem;
+}
+
+footer .fa {
+	padding-right: 0.25rem;
+}
+
+footer a {
+	padding: 0 0.5rem 0 0.5rem;
+	display: inline-block;
+	transition: ease-out 0.25s;
+}
+
+footer img {
+	width: 1.5rem;
+	display: inline;
+	margin-right: 0.5rem;
+}
