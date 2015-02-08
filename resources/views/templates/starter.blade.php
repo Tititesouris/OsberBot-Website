@@ -5,9 +5,7 @@
 		<title>OsberBot</title>
 		<link rel="stylesheet" href="/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="/css/fontfaces.css" />
 		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href="/css/colors.css" />
 		<meta name="viewport" content="initial-scale=0.8" />
 	</head>
 	<body>
