@@ -1,34 +1,36 @@
 <?php namespace App;
 
-use Illuminate\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Auth\Passwords\CanResetPassword;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
+class User extends Eloquent {
 
-	use Authenticatable, CanResetPassword;
-
-	/**
-	 * The database table used by the model.
-	 *
-	 * @var string
-	 */
 	protected $table = 'users';
+	protected $fillable = ['token'];
+	protected $hidden = ['password', 'token'];
 
-	/**
-	 * The attributes that are mass assignable.
-	 *
-	 * @var array
-	 */
-	protected $fillable = ['name', 'email', 'password'];
+	public function news()
+	{
+		return $this->hasMany('App\News', 'user_id');
+	}
 
-	/**
-	 * The attributes excluded from the model's JSON form.
-	 *
-	 * @var array
-	 */
-	protected $hidden = ['password', 'remember_token'];
+	public function commands()
+	{
+		return $this->hasMany('App\Command', 'user_id');
+	}
+
+	public function counters()
+	{
+		return $this->hasMany('App\Counter', 'user_id');
+	}
+
+	public function highlights()
+	{
+		return $this->hasMany('App\Highlight', 'user_id');
+	}
+
+	public function quotes()
+	{
+		return $this->hasMany('App\Quote', 'user_id');
+	}
 
 }
